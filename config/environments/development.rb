@@ -87,5 +87,6 @@ Rails.application.configure do
   config.log_level = :debug
 
   config.assets.precompile += %w('.svg')
+  config.assets.precompile += %w( application.js )
   config.assets.css_compressor = :sass
 end

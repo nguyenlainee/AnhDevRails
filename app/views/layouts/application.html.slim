@@ -1,0 +1,43 @@
+doctype html
+html
+  head
+    title
+      = 'Anh Dev Rails'
+    meta charset="UTF-8"
+
+    link href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"
+
+    - if I18n.locale == :en
+      meta http-equiv="content-language" content="en"
+    - else
+      meta http-equiv="content-language" content="vi"
+
+    meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
+
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbo-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbo-track': 'reload', defer: true
+
+  ruby:
+    padding = @mypage_bg ? 'px-0' : ''
+    body_class =
+      'app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show bg-white'
+  body class="#{body_class}"
+    = Gon::Base.render_data
+
+    .wrapper
+      = render partial: 'layouts/navbar'
+      = render partial: 'layouts/sidebars/sidebar'
+
+      #content
+        = yield :breadcrumb
+
+        #alert
+          = render partial: 'layouts/alert'
+
+        #ui-view.container-fluid class = padding
+          = yield
+
+    script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
