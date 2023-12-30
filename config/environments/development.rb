@@ -73,4 +73,19 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
+
+  # Lograge
+  config.log_formatter = ::Logger::Formatter.new
+
+  config.logger = ActiveSupport::Logger.new(config.paths['log'].first)
+  config.logger.formatter = proc do |severity, datetime, _, message|
+    formatted_severity = "[#{severity.upcase}]"
+    formatted_datetime = datetime.strftime('%Y-%m-%d %H:%M:%S')
+    "#{formatted_severity} #{message}\n"
+  end
+
+  config.log_level = :debug
+
+  config.assets.precompile += %w('.svg')
+  config.assets.css_compressor = :sass
 end
