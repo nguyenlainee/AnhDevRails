@@ -1,0 +1,62 @@
+section.user-login.vh-100
+  .container-fluid.h-custom
+    .row.d-flex.justify-content-center.align-items-center.h-100
+      .col-md-9.col-lg-6.col-xl-5
+        img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" class="img-fluid" alt="Login Image"
+      .col-md-8.col-lg-6.col-xl-4.offset-xl-1
+        form autocomplete='none'
+          .d-flex.flex-row.align-items-center.justify-content-center.justify-content-lg-start
+            p.lead.fw-normal.mb-0.me-3
+              = 'Sign in with'
+            button.btn.btn-floating.mx-1 type="button"
+              i.fab.fa-facebook-f
+
+            button.btn.btn-floating.mx-1 type="button"
+              i.fab.fa-twitter
+
+            button.btn.btn-floating.mx-1 type="button"
+              i.fa-brands.fa-github
+
+          .divider.d-flex.align-items-center.my-4
+            p.text-center.fw-bold.mx-3.mb-0
+              = 'Or'
+
+          / Email
+          .form-outline.mb-4
+            input.form-control.form-control-lg#username_login type='email' placeholder="Enter a valid email address"
+
+          / Password
+          .form-outline.mb-3
+            input.form-control.form-control-lg#password_login type='password' placeholder='Enter password'
+
+          / Checkbox
+          .d-flex.justify-content-between.align-items-center
+            .form-check.mb-0
+              input.form-check-input.me-2#remember_checkbox type='checkbox' value=''
+              label.form-check-label for='remember_checkbox'
+                = 'Remember me'
+            a.text-body href="#"
+              = 'Forgot password?'
+
+          .text-center.text-lg-start.mt-4.pt-2
+            button.btn.btn-primary.btn-lg type='button' style='padding-left: 2.5rem; padding-right: 2.5rem;'
+              = 'Login'
+
+            p.fw-bold.mt-3.pt-1.mb-0
+              = 'Do not have an account?'
+              a.link-danger.ms-1 href='#'
+                = 'Register'
+
+  .d-flex.flex-column.flex-md-row.text-center.text-md-start.justify-content-between.py-4.px-4.px-xl-5.bg-primary
+    .text-white.mb-3.mb-md-0
+      = 'Copyright © 2024. All rights reserved.'
+
+    div
+      a.text-white.me-4 href='#'
+        i.fab.fa-facebook-f
+
+      a.text-white.me-4 href='#'
+        i.fab.fa-twitter
+
+      a.text-white.me-4 href='#'
+        i.fa-brands.fa-github

@@ -1,0 +1,38 @@
+section.user-login {
+  user-select: none;
+
+  .h-custom {
+    height: calc(100% - 73px);
+  }
+  
+  @media (max-width: 450px) {
+    .h-custom {
+      height: 100%;
+    }
+  }
+  
+  form {
+    .divider:after, .divider:before {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #eee;
+    }
+  
+    .form-check-label {
+      cursor: pointer;
+    }
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  ::placeholder {
+    font-size: 1rem;
+  }
+}
+
+section.user-signup {
+  user-select: none;
+}
