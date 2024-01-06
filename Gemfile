@@ -36,6 +36,9 @@ gem "clipboard-rails"
 # Beautify log file
 gem "lograge"
 
+# Devise
+gem 'devise'
+
 # Rubocop
 gem "rubocop", require: false
 gem "rubocop-performance", require: false
