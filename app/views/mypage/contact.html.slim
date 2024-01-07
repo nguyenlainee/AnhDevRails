@@ -1,0 +1,49 @@
+section#contact.mb-4
+  h2.h1-responsive.font-weight-bold.text-center.my-4
+    = 'Contact Us'
+
+  p.text-center.w-responsive.mx-auto.mb-5
+    = 'Do you have any questions? Please do not hestitate to contact us directly. Our team will come back to you within a matter of hours to help you'
+
+  .row
+    .col-md-9.mb-md-0.mb-5
+      form#contact-form.mb-3 name='contact-form' action='#' method='post'
+        .row
+          .col-md-6
+            .md-form.mb-3
+              input.form-control#fullname name='fullname' type='text' placeholder='Enter Your Name'
+          .col-md-6
+            .md-form.mb-3
+              input.form-control#email name='email' type='email' placeholder='Enter Your Email'
+
+        .row
+          .col-md-12
+            .md-form.mb-3
+              input.form-control#subject name='subject' type='text' placeholder='Enter Subject'
+
+        .row
+          .col-md-12
+            .md-form
+              textarea#message.form-control.md-textarea name="messages" cols="30" rows="10" type='text' placeholder='Enter Message'
+
+      .text-md-left
+        a.btn.btn-primary href='#'
+          = 'Send'
+        .status
+
+    .col-md-3.text-center
+      ul.list-unstyled.mb-0
+        li
+          i.fas.fa-map-marker-alt.fa-2x
+          p.mt-3
+            = 'Go Vap, TP. Ho Chi Minh'
+
+        li
+          i.fas.fa-phone.mt-4.fa-2x
+          p.mt-3
+            = '086.248.1706'
+
+        li
+          i.fas.fa-envelope.mt-4.fa-2x
+          p.mt-3
+            = 'contact@anhdevrails.com'
