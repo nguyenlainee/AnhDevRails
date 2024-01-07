@@ -14,3 +14,21 @@ body {
   position: relative;
 }
 
+#header_logo {
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 3rem;
+  width: 100vw;
+  height: 10vh;
+  background-color: #B4D4FF;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  a {
+    text-decoration: none;
+    color: #11235A;
+  }
+}
