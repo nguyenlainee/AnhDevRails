@@ -1,0 +1,26 @@
+---
+en:
+  layouts:
+    navbar:
+      home: Home
+      contact_us: Contact Us
+      content: Content
+      blog: Blog
+  mypage:
+    show:
+      welcome_text: Welcome to AnhDevRails's Blog
+      slogan: Connecting Ideas - Creating Perspectives
+      search: Search
+      categories: Categories
+      side_widget: Side Widget
+      copyright_text: Any information not owned by us is credited with the original source, respecting the copyright of the author or original owner. Thank you for reading and adhering to our copyright policies.
+    contact:
+      contact_us: Contact Us
+      contact_notes: Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you
+      send: Send
+  search_keyword: Enter search term...
+  copyright: AnhDevRails - All rights reserved.
+  enter_fullname: Your Full Name
+  enter_email: Your Email
+  enter_subject: Subject
+  enter_message: Message

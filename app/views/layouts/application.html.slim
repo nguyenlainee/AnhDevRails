@@ -30,15 +30,7 @@ html
 
     .wrapper
       = render partial: 'layouts/navbar'
-      = render partial: 'layouts/sidebars/sidebar'
 
-      #content
-        = yield :breadcrumb
-
-        #alert
-          = render partial: 'layouts/alert'
-
-        #ui-view.container-fluid
-          = yield
+      = yield
 
     script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"

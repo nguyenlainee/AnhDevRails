@@ -1,34 +1,34 @@
-section#contact.mb-4
+section#contact.mb-4.overflow-hidden
   h2.h1-responsive.font-weight-bold.text-center.my-4
-    = 'Contact Us'
+    = t '.contact_us'
 
   p.text-center.w-responsive.mx-auto.mb-5
-    = 'Do you have any questions? Please do not hestitate to contact us directly. Our team will come back to you within a matter of hours to help you'
+    = t '.contact_notes'
 
   .row
-    .col-md-9.mb-md-0.mb-5
+    .col-md-9.mb-md-0.mb-5.ps-4
       form#contact-form.mb-3 name='contact-form' action='#' method='post'
         .row
           .col-md-6
             .md-form.mb-3
-              input.form-control#fullname name='fullname' type='text' placeholder='Enter Your Name'
+              input.form-control#fullname name='fullname' type='text' placeholder="#{I18n.t('.enter_fullname')}"
           .col-md-6
             .md-form.mb-3
-              input.form-control#email name='email' type='email' placeholder='Enter Your Email'
+              input.form-control#email name='email' type='email' placeholder="#{I18n.t('.enter_email')}"
 
         .row
           .col-md-12
             .md-form.mb-3
-              input.form-control#subject name='subject' type='text' placeholder='Enter Subject'
+              input.form-control#subject name='subject' type='text' placeholder="#{I18n.t('.enter_subject')}"
 
         .row
           .col-md-12
             .md-form
-              textarea#message.form-control.md-textarea name="messages" cols="30" rows="10" type='text' placeholder='Enter Message'
+              textarea#message.form-control.md-textarea name="messages" cols="30" rows="10" type='text' placeholder="#{I18n.t('.enter_message')}"
 
       .text-md-left
         a.btn.btn-primary href='#'
-          = 'Send'
+          = t '.send'
         .status
 
     .col-md-3.text-center

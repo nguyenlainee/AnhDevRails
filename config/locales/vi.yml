@@ -1,0 +1,26 @@
+---
+vi:
+  layouts:
+    navbar:
+      home: Trang Chủ
+      contact_us: Liên Hệ
+      content: Nội Dung
+      blog: Blog
+  mypage:
+    show:
+      welcome_text: Chào Mừng Đến Với AnhDevRails Blog
+      slogan: Kết Nối Ý Tưởng - Tạo Nên Quan Điểm
+      search: Tìm Kiếm
+      categories: Danh Mục
+      side_widget: Tiện Ích
+      copyright_text: Mọi thông tin không thuộc sở hữu của chúng tôi được chúng tôi ghi rõ nguồn gốc và tôn trọng quyền sở hữu tác giả hoặc chủ sở hữu ban đầu. Cảm ơn bạn đã đọc và tuân thủ các quy định bản quyền của chúng tôi.
+    contact:
+      contact_us: Liên Hệ Chúng Tôi
+      contact_notes: Bạn có câu hỏi nào không? Xin đừng ngần ngại liên hệ trực tiếp với chúng tôi. Chúng tôi sẽ quay lại với bạn trong vòng vài giờ để giúp bạn.
+      send: Gửi
+  search_keyword: Nhập cụm từ tìm kiếm...
+  copyright: AnhDevRails - Đã Đăng Kí Bản Quyền
+  enter_fullname: Họ Tên
+  enter_email: Email
+  enter_subject: Chủ Đề
+  enter_message: Nội Dung
