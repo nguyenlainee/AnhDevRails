@@ -1,0 +1,62 @@
+.container-xl.px-4.mt-4
+  nav.nav.nav-borders
+    = link_to 'Profile', mypage_user_profile_path, class: 'nav-link active ms-0', target: '__blank'
+    = link_to 'Billing', mypage_billing_path, class: 'nav-link', target: '__blank'
+    = link_to 'Security', mypage_security_path, class: 'nav-link', target: '__blank'
+    = link_to 'Notifications', mypage_notification_path, class: 'nav-link', target: '__blank'
+
+  hr.mt-0.mb-4
+
+  .row
+    .col-xl-4
+        .card-header
+          = 'Profile Picture'
+        .card-body.text-center
+          img.img-account-profile.rounded-circle.mb-2(src='http://bootdey.com/img/Content/avatar/avatar1.png', alt='')
+          div.small.font-italic.text-muted.mb-4
+            = 'JPG or PNG no larger than 5 MB'
+          button.btn.btn-primary(type='button')
+            = 'Upload new image'
+    .col-xl-8
+      .card.mb-4
+        .card-header
+          = 'Account Details'
+        .card-body
+          form
+            .mb-3
+              label.small.mb-1(for='inputUsername')
+                = 'Username (how your name will appear to other users on the site)'
+              input.form-control#inputUsername(type='text' placeholder='Enter your username' value='nguyenlai1706')
+            .row.gx-3.mb-3
+              .col-md-6
+                label.small.mb-1(for='inputFirstName')
+                  = 'First name'
+                input.form-control#inputFirstName(type='text' placeholder='Enter your first name' value='Valerie')
+              .col-md-6
+                label.small.mb-1(for='inputLastName')
+                  = 'Last name'
+                input.form-control#inputLastName(type='text' placeholder='Enter your last name' value='Luna')
+            .row.gx-3.mb-3
+              .col-md-6
+                label.small.mb-1(for='inputOrgName')
+                  = 'Organization name'
+                input.form-control#inputOrgName(type='text' placeholder='Enter your organization name' value='Start Bootstrap')
+              .col-md-6
+                label.small.mb-1(for='inputLocation')
+                  = 'Location'
+                input.form-control#inputLocation(type='text' placeholder='Enter your location' value='San Francisco, CA')
+            .mb-3
+              label.small.mb-1(for='inputEmailAddress')
+                = 'Email address'
+              input.form-control#inputEmailAddress(type='email' placeholder='Enter your email address' value='name@example.com')
+            .row.gx-3.mb-3
+              .col-md-6
+                label.small.mb-1(for='inputPhone')
+                  = 'Phone number'
+                input.form-control#inputPhone(type='tel' placeholder='Enter your phone number' value='555-123-4567')
+              .col-md-6
+                label.small.mb-1(for='inputBirthday')
+                  = 'Birthday'
+                input.form-control#inputBirthday(type='text' name='birthday' placeholder='Enter your birthday' value='06/10/1988')
+            button.btn.btn-primary(type='button')
+              = 'Save changes'

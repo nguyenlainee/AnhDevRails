@@ -1,0 +1,151 @@
+.container-xl.px-4.mt-4
+  nav.nav.nav-borders
+    = link_to 'Profile', mypage_user_profile_path, class: 'nav-link active ms-0', target: '__blank'
+    = link_to 'Billing', mypage_billing_path, class: 'nav-link', target: '__blank'
+    = link_to 'Security', mypage_security_path, class: 'nav-link', target: '__blank'
+    = link_to 'Notifications', mypage_notification_path, class: 'nav-link', target: '__blank'
+  hr.mt-0.mb-4
+
+  .row
+    .col-lg-4.mb-4
+      .card.h-100.border-start-lg.border-start-primary
+        .card-body
+          div.small.text-muted
+            = 'Current monthly bill'
+          div.h3
+            = '$20.00'
+          a.text-arrow-icon.small(href='#!')
+            = 'Switch to yearly billing'
+            svg(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right')
+              line(x1='5' y1='12' x2='19' y2='12')
+              polyline(points='12 5 19 12 12 19')
+    .col-lg-4.mb-4
+      .card.h-100.border-start-lg.border-start-secondary
+        .card-body
+          div.small.text-muted
+            = 'Next payment due'
+          div.h3
+            = 'July 15'
+          a.text-arrow-icon.small.text-secondary(href='#!')
+            = 'View payment history'
+            svg(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right')
+              line(x1='5' y1='12' x2='19' y2='12')
+              polyline(points='12 5 19 12 12 19')
+    .col-lg-4.mb-4
+      .card.h-100.border-start-lg.border-start-success
+        .card-body
+          div.small.text-muted
+            = 'Current plan'
+          div.h3.d-flex.align-items-center
+            = 'Freelancer'
+          a.text-arrow-icon.small.text-success(href='#!')
+            = 'Upgrade plan'
+            svg(xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-arrow-right')
+              line(x1='5' y1='12' x2='19' y2='12')
+              polyline(points='12 5 19 12 12 19')
+
+  .card.card-header-actions.mb-4
+    .card-header
+      = 'Payment Methods'
+      button.btn.btn-sm.btn-primary(type='button')
+        = 'Add Payment Method'
+    .card-body.px-0
+      .d-flex.align-items-center.justify-content-between.px-4
+        .d-flex.align-items-center
+          i.fab.fa-cc-visa.fa-2x.cc-color-visa
+          div.ms-4
+            div.small
+              = 'Visa ending in 1234'
+            div.text-xs.text-muted
+              = 'Expires 04/2024'
+        div.ms-4.small
+          div.badge.bg-light.text-dark.me-3
+            = 'Default'
+          a(href='#!')
+            = 'Edit'
+      hr
+      .d-flex.align-items-center.justify-content-between.px-4
+        .d-flex.align-items-center
+          i.fab.fa-cc-mastercard.fa-2x.cc-color-mastercard
+          div.ms-4
+            div.small
+              = 'Mastercard ending in 5678'
+            div.text-xs.text-muted
+              = 'Expires 05/2022'
+        div.ms-4.small
+          a.text-muted.me-3(href='#!')
+            = 'Make Default'
+          a(href='#!')
+            = 'Edit'
+      hr
+      .d-flex.align-items-center.justify-content-between.px-4
+        .d-flex.align-items-center
+          i.fab.fa-cc-amex.fa-2x.cc-color-amex
+          div.ms-4
+            div.small
+              = 'American Express ending in 9012'
+            div.text-xs.text-muted
+              = 'Expires 01/2026'
+        div.ms-4.small
+          a.text-muted.me-3(href='#!')
+            = 'Make Default'
+          a(href='#!')
+            = 'Edit'
+
+  .card.mb-4
+    .card-header
+      = 'Billing History'
+    .card-body.p-0
+      .table-responsive.table-billing-history
+        table.table.mb-0
+          thead
+            tr
+              th.border-gray-200(scope='col')
+                = 'Transaction ID'
+              th.border-gray-200(scope='col')
+                = 'Date'
+              th.border-gray-200(scope='col')
+                = 'Amount'
+              th.border-gray-200(scope='col')
+                = 'Status'
+          tbody
+            tr
+              td
+                = '#39201'
+              td
+                = '06/15/2021'
+              td
+                = '$29.99'
+              td
+                span.badge.bg-light.text-dark
+                  = 'Pending'
+            tr
+              td
+                = '#38594'
+              td
+                = '05/15/2021'
+              td
+                = '$29.99'
+              td
+                span.badge.bg-success
+                  = 'Paid'
+            tr
+              td
+                = '#38223'
+              td
+                = '04/15/2021'
+              td
+                = '$29.99'
+              td
+                span.badge.bg-success
+                  = 'Paid'
+            tr
+              td
+                = '#38125'
+              td
+                = '03/15/2021'
+              td
+                = '$29.99'
+              td
+                span.badge.bg-success
+                  = 'Paid'
