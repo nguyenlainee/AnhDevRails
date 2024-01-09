@@ -16,6 +16,9 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
           = link_to t('.content'), '#', class: 'nav-link'
 
         li.nav-item
+          = link_to t('.about_me'), mypage_about_me_path, class: 'nav-link'
+
+        li.nav-item
           = link_to t('.blog'), '#', class: 'nav-link active', 'aria-current' => 'page'
 
         li.nav-item.d-flex.align-items-center.ml-2
@@ -23,3 +26,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
             = link_to image_tag('vi_flag.png', alt: 'Vietnamese', class: 'image_language'), url_for(locale: :vi), class: 'nav-link'
           - else
             = link_to image_tag('en_flag.png', alt: 'English', class: 'image_language'), url_for(locale: :en), class: 'nav-link'
+
+        li.nav-item.fw-bold
+          = link_to 'Nguyen Hoang Lai', '#', class: 'nav-link'

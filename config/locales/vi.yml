@@ -6,6 +6,7 @@ vi:
       contact_us: Liên Hệ
       content: Nội Dung
       blog: Blog
+      about_me: Về Tác Giả
   mypage:
     show:
       welcome_text: Chào Mừng Đến Với AnhDevRails Blog
@@ -18,6 +19,13 @@ vi:
       contact_us: Liên Hệ Chúng Tôi
       contact_notes: Bạn có câu hỏi nào không? Xin đừng ngần ngại liên hệ trực tiếp với chúng tôi. Chúng tôi sẽ quay lại với bạn trong vòng vài giờ để giúp bạn.
       send: Gửi
+    about_me:
+      follow: Theo Dõi
+      message: Nhắn Tin
+      fullname: Họ Tên
+      email: Email
+      phone: Số Điện Thoại
+      address: Địa Chỉ
   search_keyword: Nhập cụm từ tìm kiếm...
   copyright: AnhDevRails - Đã Đăng Kí Bản Quyền
   enter_fullname: Họ Tên

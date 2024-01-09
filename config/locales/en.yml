@@ -6,6 +6,7 @@ en:
       contact_us: Contact Us
       content: Content
       blog: Blog
+      about_me: About Me
   mypage:
     show:
       welcome_text: Welcome to AnhDevRails's Blog
@@ -18,6 +19,13 @@ en:
       contact_us: Contact Us
       contact_notes: Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within a matter of hours to help you
       send: Send
+    about_me:
+      follow: Follow
+      message: Message
+      fullname: Full Name
+      email: Email
+      phone: Phone
+      address: Address
   search_keyword: Enter search term...
   copyright: AnhDevRails - All rights reserved.
   enter_fullname: Your Full Name
